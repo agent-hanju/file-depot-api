@@ -1,0 +1,58 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'me.hanju'
+version = '0.1.0'
+description = 'FileDepot API DTOs'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+    withJavadocJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+
+            groupId = 'me.hanju'
+            artifactId = 'file-depot-api'
+            version = project.version
+
+            pom {
+                name = 'File Depot API'
+                description = project.description
+                url = 'https://github.com/agent-hanju/file-depot-api'
+
+                licenses {
+                    license {
+                        name = 'MIT License'
+                        url = 'https://opensource.org/licenses/MIT'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = 'agent-hanju'
+                        email = 'agent.hanju@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection = 'scm:git:git://github.com/agent-hanju/path-storage-api.git'
+                    developerConnection = 'scm:git:ssh://github.com/agent-hanju/path-storage-api.git'
+                    url = 'https://github.com/agent-hanju/path-storage-api'
+                }
+            }
+        }
+    }
+}
