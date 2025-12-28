@@ -75,5 +75,5 @@ ConfirmUploadRequest request = new ConfirmUploadRequest("upload-session-id");
 
 ## 관련 프로젝트
 
-- [file-depot](https://github.com/agent-hanju/file-depot) - File Depot 서버
-- [file-depot-client](https://github.com/agent-hanju/file-depot-client) - File Depot 클라이언트
+- [file-depot](https://github.com/kimdoyeon-goryeong23rd/file-depot) - File Depot 서버
+- [file-depot-client](https://github.com/kimdoyeon-goryeong23rd/file-depot-client) - File Depot 클라이언트

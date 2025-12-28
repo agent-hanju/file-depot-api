@@ -24,8 +24,8 @@ publishing {
         maven(MavenPublication) {
             from components.java
 
-            groupId = 'me.hanju'
-            artifactId = 'file-depot-api'
+            groupId = project.group
+            artifactId = 'api'
             version = project.version
 
             pom {
@@ -48,9 +48,9 @@ publishing {
                 }
 
                 scm {
-                    connection = 'scm:git:git://github.com/agent-hanju/path-storage-api.git'
-                    developerConnection = 'scm:git:ssh://github.com/agent-hanju/path-storage-api.git'
-                    url = 'https://github.com/agent-hanju/path-storage-api'
+                    connection = 'scm:git:git://github.com/agent-hanju/file-depot-api.git'
+                    developerConnection = 'scm:git:ssh://github.com/agent-hanju/file-depot-api.git'
+                    url = 'https://github.com/agent-hanju/file-depot-api'
                 }
             }
         }
