@@ -1,5 +1,6 @@
 package me.hanju.filedepot.api.dto;
 
 public record ConfirmUploadRequest(
-    String id) {
+    String id,
+    @Nullable String fileName) {
 }

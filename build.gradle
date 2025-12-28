@@ -3,8 +3,8 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'me.hanju'
-version = '0.1.0'
+group = 'me.hanju.filedepot'
+version = '0.2.0'
 description = 'FileDepot API DTOs'
 
 java {
@@ -17,6 +17,10 @@ java {
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+    api 'jakarta.annotation:jakarta.annotation-api:3.0.0'
 }
 
 publishing {
